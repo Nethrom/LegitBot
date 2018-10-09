@@ -1,0 +1,20 @@
+{
+  "name": "legit-bot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "bot.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7",
+    "discord.js": "latest",
+    "dotenv": "^6.0.0",
+    "mongoose": "^5.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "babel-node --presets env bot.js",
+    "docker": "docker build -t legit-bot . && docker run --env-file ./.env legit-bot"
+  },
+  "author": "",
+  "license": "ISC"
+}
