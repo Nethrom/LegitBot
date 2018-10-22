@@ -37,7 +37,7 @@ class Character extends Model {
             this.levelUp();
         }
 
-        console.log(this.data.name + " gained " + xp + "XP");
+        console.log(this.data.name + " gained " + xp + "experience");
 
         this.update({xp: this.data.xp, total_xp: this.data.total_xp});
     }
